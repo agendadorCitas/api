@@ -10,6 +10,10 @@ import allRoutesAppointment from "./routes/appointment.routes.js";
 
 const app = express();
 
+app.get("/", (req, res) => {
+    res.send({msg: "Hello World"});
+});
+
 // Se establece el puerto
 app.set("PORT", process.env.PORT || 3000);
 
