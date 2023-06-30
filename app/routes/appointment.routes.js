@@ -11,7 +11,7 @@ routeAppointment.get("/viewAppointment", controller.findAllAppointment);
 routeAppointment.post("/saveAppointment", controller.insertAppointment);
 
 // ACTUALIZA INFORMACIÓN
-routeAppointment.put("/upAppointment", controller.updateAppointment);
+routeAppointment.put("/saveAppointment", controller.updateAppointment);
 
 // ELIMINA INFORMACIÓN
 routeAppointment.delete("/deleAppointment/:id", controller.deleteAppointment);
